@@ -1,15 +1,15 @@
 #!/bin/bash
 
 if [ "$#" -ne 2 ]; then
-    echo "usage: ./ivy_install [ivy version] [ivy jar dest filepath]"
+    echo "usage: ${0} [ivy version] [ivy jar dest filepath]"
     exit 1
 fi
 
 ANT_HOST=https://downloads.apache.org/ant
 ANT_KEYS_FILENAME=KEYS
 
-IVY_VERSION="$1"
-IVY_JAR_DEST_FILEPATH="$2"
+IVY_VERSION="${1}"
+IVY_JAR_DEST_FILEPATH="${2}"
 
 IVY_HOST=${ANT_HOST}/ivy/${IVY_VERSION}
 IVY_TAR_FILENAME=apache-ivy-${IVY_VERSION}-bin.tar.gz
