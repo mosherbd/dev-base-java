@@ -1,9 +1,16 @@
 #!/bin/bash
 
+# Wrapper for sdkman to install multiple sdks in a single command 
+# and clean up junk files to reduce container size.
+
 # Requires packages zip, unzip, curl
 
-# Args are strings containing sdkman candidates
-# e.g. '"java 11.0.9.hs-adpt" "gradle 6.8" "maven" "ivy"'
+# Args are double-quoted strings containing sdkman candidates
+if [ "$#" -eq 0 ]; then
+    echo "usage: ${0} ["[sdk [version]]", ...]"
+    echo 'example: '${0}' "java 11.0.9.hs-adpt" "gradle 6.8" "maven" "ivy"'
+    exit 1
+fi
 
 cd ~
 

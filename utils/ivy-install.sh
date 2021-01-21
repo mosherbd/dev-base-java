@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Automates installation of the specified version of ivy
+
+# Requires curl, gpg, tar packages
+
 if [ "$#" -ne 2 ]; then
     echo "usage: ${0} [ivy version] [ivy jar dest filepath]"
     exit 1
