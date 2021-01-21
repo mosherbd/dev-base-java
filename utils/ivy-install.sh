@@ -5,6 +5,8 @@ if [ "$#" -ne 2 ]; then
     exit 1
 fi
 
+cd ~
+
 ANT_HOST=https://downloads.apache.org/ant
 ANT_KEYS_FILENAME=KEYS
 
