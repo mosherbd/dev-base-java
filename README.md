@@ -1,10 +1,10 @@
-# dev-base-java
+# devcontainer-java
 
 ## Overview
-This is a ubuntu image derived from dev-base with sdkman, java sdk, ant, ivy, maven, and gradle installed. Specific versions for each can easily be specified in the Dockerfile.
+This is a ubuntu image derived from devcontainer with sdkman, java sdk, ant, ivy, maven, and gradle installed. Specific versions for each can easily be specified in the Dockerfile.
 
 ## Automatic Builds
-Changes to this Dockerfile trigger automatic builds for mosherbd/dev-base-java on Docker Hub.
+Changes to this Dockerfile trigger automatic builds for mosherbd/devcontainer-java on Docker Hub.
 
 ## Utils
 - ivy_install
